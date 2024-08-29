@@ -1,0 +1,149 @@
+[
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "math_operations",
+        "description": "math_operations",
+        "isExtraImport": true,
+        "detail": "math_operations",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "importPath": "math_operations",
+        "description": "math_operations",
+        "isExtraImport": true,
+        "detail": "math_operations",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "importPath": "math_operations",
+        "description": "math_operations",
+        "isExtraImport": true,
+        "detail": "math_operations",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "coverage",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "coverage",
+        "description": "coverage",
+        "detail": "coverage",
+        "documentation": {}
+    },
+    {
+        "label": "TestMathOperations",
+        "kind": 6,
+        "importPath": "tests.test_math_operations",
+        "description": "tests.test_math_operations",
+        "peekOfCode": "class TestMathOperations(unittest.TestCase):\n    \"\"\"\n    Test cases for the functions in the math_operations module.\n    \"\"\"\n    def test_add(self):\n        \"\"\"\n        Test addition of two positive integers.\n        \"\"\"\n        self.assertEqual(add(1, 2), 3)\n    def test_subtract(self):",
+        "detail": "tests.test_math_operations",
+        "documentation": {}
+    },
+    {
+        "label": "get_coverage",
+        "kind": 2,
+        "importPath": "api",
+        "description": "api",
+        "peekOfCode": "def get_coverage():\n    \"\"\"\n    Generate and return a code coverage report.\n    \"\"\"\n    coverage_file = 'coverage.xml'\n    try:\n        cov = coverage.Coverage()\n        cov.start()\n        loader = unittest.TestLoader()\n        start_dir = os.path.join(os.path.dirname(__file__), 'tests')",
+        "detail": "api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "api",
+        "description": "api",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/coverage', methods=['GET'])\ndef get_coverage():\n    \"\"\"\n    Generate and return a code coverage report.\n    \"\"\"\n    coverage_file = 'coverage.xml'\n    try:\n        cov = coverage.Coverage()\n        cov.start()",
+        "detail": "api",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "math_operations",
+        "description": "math_operations",
+        "peekOfCode": "def add(a, b):\n    \"\"\"\n    Add two numbers\n    \"\"\"\n    return a + b\ndef subtract(a, b):\n    \"\"\"\n    Subtract two numbers\n    \"\"\"\n    return a - b",
+        "detail": "math_operations",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "kind": 2,
+        "importPath": "math_operations",
+        "description": "math_operations",
+        "peekOfCode": "def subtract(a, b):\n    \"\"\"\n    Subtract two numbers\n    \"\"\"\n    return a - b\ndef multiply(a, b):\n    \"\"\"\n    Multiply two numbers\n    \"\"\"\n    return a * b",
+        "detail": "math_operations",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "math_operations",
+        "description": "math_operations",
+        "peekOfCode": "def multiply(a, b):\n    \"\"\"\n    Multiply two numbers\n    \"\"\"\n    return a * b\ndef divide(a, b):\n    \"\"\"\n    Divide two numbers\n    \"\"\"\n    if b == 0:",
+        "detail": "math_operations",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "math_operations",
+        "description": "math_operations",
+        "peekOfCode": "def divide(a, b):\n    \"\"\"\n    Divide two numbers\n    \"\"\"\n    if b == 0:\n        raise ValueError(\"Cannot divide by zero\")\n    return a / b",
+        "detail": "math_operations",
+        "documentation": {}
+    }
+]
